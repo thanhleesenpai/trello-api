@@ -1,6 +1,7 @@
 /* eslint-disable no-console */
 import express from 'express'
-import { CONNECT_DB, GET_DB } from '~/config/mongodb'
+import exitHook from 'async-exit-hook'
+import { CONNECT_DB, GET_DB, CLOSE_DB } from '~/config/mongodb'
 
 const START_SERVER = () => {
   const app = express()
@@ -15,6 +16,20 @@ const START_SERVER = () => {
 
   app.listen(port, hostname, () => {
     console.log(`3. Hello, I am running at http://${ hostname }:${ port }/`)
+  })
+
+  // Thực hiện các tác vụ cleanup trước khi dùng server
+  // exitHook(() => {
+  //   console.log('4. Disconnecting from MongoDB Cloud Atlas')
+  //   CLOSE_DB()
+  //   console.log('5. Disconnected from MongoDB Cloud Atlas')
+  // })
+  exitHook(() => {
+    console.log('4. Đang ngắt kết nối tới MongoDB Cloud Atlas...')
+    CLOSE_DB().then(() => {
+      console.log('5. Đã ngắt kết nối tới MongoDB Cloud Atlas')
+      process.exit()
+    })
   })
 }
 
