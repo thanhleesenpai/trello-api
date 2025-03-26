@@ -7,6 +7,7 @@ const createNew = async (req, res, next) => {
     res.status(StatusCodes.CREATED).json(createdCard)
   } catch (error) { next(error) }
 }
+
 export const cardController = {
   createNew
 }
