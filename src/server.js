@@ -23,9 +23,17 @@ const START_SERVER = () => {
   //Middleware xử lí lỗi tập trung
   app.use(errorHandlingMiddleware)
 
-  app.listen(env.APP_PORT, env.APP_HOST, () => {
-    console.log(`3. Hello ${env.AUTHOR}, I am running at http://${ env.APP_HOST }:${ env.APP_PORT }/`)
-  })
+  // Môi trường production (đang support Render.com)
+  if (env.BUILD_MODE === 'production') {
+    app.listen(process.env.PORT, () => {
+      console.log(`3. Production: Hello ${env.AUTHOR}, Backend server is running at Port: ${ process.env.PORT }`)
+    })
+  } else {
+    // Môi trường local dev
+    app.listen(env.LOCAL_DEV_APP_PORT, env.LOCAL_DEV_APP_HOST, () => {
+      console.log(`3. Hello ${env.AUTHOR}, Backend server is running at Host: ${ env.LOCAL_DEV_APP_HOST } and Port: ${ env.LOCAL_DEV_APP_PORT }`)
+    })
+  }
 
   // Thực hiện các tác vụ cleanup trước khi dùng server
   exitHook(() => {
