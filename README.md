@@ -1,3 +1,8 @@
+
+# Project Title
+
+A brief description of what this project does and who it's for
+
 # 📝 Trello Clone – Project Management App
 
 A full-stack Trello-like task management application built with **React.js**, **Express.js**, and **MongoDB**.
@@ -54,13 +59,15 @@ A full-stack Trello-like task management application built with **React.js**, **
 ## 🚀 Getting Started
 
 ### Clone Repos
-
 ```bash
 git clone https://github.com/thanhleesenpai/trello-api
 git clone https://github.com/thanhleesenpai/trello-web
-⚙️ Backend Setup
+```
+### Backend Setup
 📁 .env file (in trello-api)
+
 Create a .env file and add the following:
+```env
 MONGODB_URI=your_mongodb_connection_string
 DATABASE_NAME=your_database_name
 
@@ -75,18 +82,21 @@ WEBSITE_DOMAIN_PRODUCTION=https://trello-web-ten-kappa.vercel.app
 BREVO_API_KEY=your_brevo_api_key
 ADMIN_EMAIL_ADDRESS=admin@example.com
 ADMIN_EMAIL_NAME=Trello Admin
-Install & Run
+```
+#### Install & Run
+```bash
 cd trello-api
 yarn install
 yarn dev
-💻 Frontend Setup
-📁 .env file (in trello-web)
-VITE_API_BACKEND=https://trello-api-73hs.onrender.com/v1
-Install & Run
+```
+###💻 Frontend Setup
+
+####Install & Run
+```bash
 cd trello-web
 yarn install
 yarn dev
+```
+
 📸 Screenshots
 
-🧑 Author
-Built with ❤️ by @thanhleesenpai
