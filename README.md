@@ -11,6 +11,15 @@ A full-stack Trello-like task management application built with **React.js**, **
 
 🌐: [https://trello-web-ten-kappa.vercel.app](https://trello-web-ten-kappa.vercel.app)
 
+### ⚠️ Notice: Initial Load Delay
+This project is deployed using Render (for backend) and Vercel (for frontend) on free-tier plans. As a result, there may be a cold start delay when accessing the app after a period of inactivity.
+
+⏱ The initial load may take around 30–60 seconds, especially for the backend hosted on Render.
+
+🔄 Please be patient while the server wakes up. Subsequent requests should respond much faster.
+
+
+
 ---
 
 ## 📁 Project Structure
@@ -27,7 +36,7 @@ A full-stack Trello-like task management application built with **React.js**, **
 
 ## ⚙️ Features
 
-✅ List, and card creation (like Trello)  
+✅ Board, list, and card creation (like Trello)  
 ✅ Drag & Drop with real-time UI updates  
 ✅ User authentication with JWT  
 ✅ Token refresh mechanism  
