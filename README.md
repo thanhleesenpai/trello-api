@@ -5,7 +5,7 @@ A brief description of what this project does and who it's for
 
 # 📝 Trello Clone – Project Management App
 
-A full-stack Trello-like task management application built with **React.js**, **Express.js**, and **MongoDB**.
+A full-stack Trello-like task management application built with **MERN**(**MongoDB**, **Express.js**, **React.js**, and **Node.js**)
 
 ## 🔗 Live Demos
 
