@@ -93,7 +93,7 @@ cd trello-api
 yarn install
 yarn dev
 ```
-###💻 Frontend Setup
+### 💻 Frontend Setup
 
 #### Install & Run
 ```bash
