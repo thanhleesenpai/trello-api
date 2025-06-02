@@ -27,7 +27,7 @@ A full-stack Trello-like task management application built with **React.js**, **
 
 ## ⚙️ Features
 
-✅ Board, list, and card creation (like Trello)  
+✅ List, and card creation (like Trello)  
 ✅ Drag & Drop with real-time UI updates  
 ✅ User authentication with JWT  
 ✅ Token refresh mechanism  
