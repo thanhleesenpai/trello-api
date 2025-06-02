@@ -1,12 +1,10 @@
-
 # 📝 Trello Clone – Project Management App
 
 A full-stack Trello-like task management application built with **React.js**, **Express.js**, and **MongoDB**.
 
 ## 🔗 Live Demos
 
-- 🌐 Frontend (Vercel): [https://trello-web-ten-kappa.vercel.app](https://trello-web-ten-kappa.vercel.app)
-- 🛠️ Backend (Render): [https://trello-api-73hs.onrender.com](https://trello-api-73hs.onrender.com)
+🌐: [https://trello-web-ten-kappa.vercel.app](https://trello-web-ten-kappa.vercel.app)
 
 ---
 
@@ -63,10 +61,6 @@ git clone https://github.com/thanhleesenpai/trello-web
 ⚙️ Backend Setup
 📁 .env file (in trello-api)
 Create a .env file and add the following:
-
-env
-Sao chép
-Chỉnh sửa
 MONGODB_URI=your_mongodb_connection_string
 DATABASE_NAME=your_database_name
 
@@ -82,27 +76,17 @@ BREVO_API_KEY=your_brevo_api_key
 ADMIN_EMAIL_ADDRESS=admin@example.com
 ADMIN_EMAIL_NAME=Trello Admin
 Install & Run
-bash
-Sao chép
-Chỉnh sửa
 cd trello-api
 yarn install
 yarn dev
 💻 Frontend Setup
 📁 .env file (in trello-web)
-env
-Sao chép
-Chỉnh sửa
 VITE_API_BACKEND=https://trello-api-73hs.onrender.com/v1
 Install & Run
-bash
-Sao chép
-Chỉnh sửa
 cd trello-web
 yarn install
 yarn dev
 📸 Screenshots
-You can add some screenshots of your Trello UI here to make the README more visual.
 
 🧑 Author
 Built with ❤️ by @thanhleesenpai
