@@ -26,7 +26,7 @@ This project is deployed using Render (for backend) and Vercel (for frontend) on
 
 ### 🔸 Frontend
 - 📂 Repository: [trello-web](https://github.com/thanhleesenpai/trello-web)
-- 🌟 Stack: React, Redux Toolkit, Axios, Tailwind CSS
+- 🌟 Stack: React, Redux Toolkit, Axios, Material UI
 
 ### 🔹 Backend
 - 📂 Repository: [trello-api](https://github.com/thanhleesenpai/trello-api)
@@ -53,7 +53,7 @@ This project is deployed using Render (for backend) and Vercel (for frontend) on
 - React + Vite
 - Redux Toolkit
 - Axios
-- TailwindCSS
+- Material UI
 
 **Backend:**
 - Node.js + Express
